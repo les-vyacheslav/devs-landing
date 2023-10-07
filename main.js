@@ -4,7 +4,8 @@ function main() {
         loop: true,
         nav: true,
         center: true,
-        // autoWidth:true,
+        autoWidth:true,
+        margin: 0,
         responsive:{
             0:{
                 items:1
@@ -17,6 +18,8 @@ function main() {
             }
         }
     });
+
+    AOS.init();
 
 }
 
