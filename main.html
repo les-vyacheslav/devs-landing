@@ -4,7 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Devs Unity</title>
+    <link rel="stylesheet" href="grid.css">
     <link rel="stylesheet" href="main.css">
+
+    <!-- Libs -->
+    <link rel="stylesheet" href="owl-carousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="owl-carousel/owl.theme.default.min.css">
 </head>
 <body>
     
@@ -13,7 +18,7 @@
             
             <div class="logo">
                 <!-- <img src="" alt=""> -->
-                <div class="logo-text">Palm</div>
+                <div class="logo-text">Palm*</div>
             </div>
 
             <nav class="globalnav">
@@ -40,58 +45,83 @@
     </header>
 
     <main class="main">
-        <section class="area area--cover">
-            <div class="area-content">
-                <div class="grid">
-                    <div class="grid-1-6">
-                        <h1 class="title">You’ve never designed this easy before.</h1>
-                        <p>An alternative environment for creating your idea</p>
-                        <form class="form">
-                            <div class="fm-wrap">
-                                <input class="fm-control">
-                                <button class="button button--primary" type="submit">Get Started</button>
-                            </div>
-                        </form>
+
+        <section class="area area--rounded" style="height: 560px;">
+            <div class="area-container" style="height: 100%;">
+                <div class="area-content" style="display: flex; align-items: center; width: 100%; height: 100%;">
+                    <div class="row">
+                        <div class="col-8 offset-1">
+                            <h1 class="title" style="color: #fff; max-width: 880px; text-shadow: 0 2px 50px rgba(0,0,0,.48);">You’ve never designed this easy before.</h1>
+                            <p style="color: #fff; font-size: 21px;">An alternative environment for creating your idea</p>
+                            <!-- <input type="text" style="
+                            height: 40px;
+                            border-radius: 8.6px;
+                            border: none;
+                            margin-top: 24px;
+                        "> -->
+                        </div>
+                        <div class="col align-self-end">
+                            <!-- <form class="form">
+                                <div class="fm-wrap">
+                                    <input class="fm-control">
+                                    <button class="button button--primary" type="submit">Get Started</button>
+                                </div>
+                            </form> -->
+                        </div>
                     </div>
-                    <div class="grid-6-12">
-                        <img class="image" src="img/1.jpg" alt="">
-                    </div>
+                </div>
+                <div class="area-bg">
+                    <video muted autoplay width="100%" height="100%" loop="true" style="object-fit: cover;">
+                        <source src="medium_2x.mp4" type="video/mp4">
+                    </video>
                 </div>
             </div>
-            <div class="ar-bg"></div>
         </section>
     
-        <section class="area">
+        
+        <section class="area" style="padding-top: 140px; padding-bottom: 140px;">
             <div class="area-content">
-                <div class="ar-head">
+                <div class="ar-head ar-head--center" style="margin-bottom: 60px;">
                     <span class="uptitle">Explore us</span>
-                    <h2 class="title">Design stunning web sites without hiring a designer</h2>
+                    <h2 class="title" style="max-width: 500px;">Design stunning web sites without hiring a designer</h2>
                 </div>
+
                 <div class="pitch">
+                    <div class="owl-carousel">
+                        <div><img class="pt-image" src="img/slide-1.png" alt=""></div>
+                        <div><img class="pt-image" src="img/slide-1.png" alt=""></div>
+                        <div><img class="pt-image" src="img/slide-1.png" alt=""></div>
+                        <div><img class="pt-image" src="img/slide-1.png" alt=""></div>
+                        <div><img class="pt-image" src="img/slide-1.png" alt=""></div>
+                    </div>
+                </div>
+
+                <!-- <div class="pitch">
                     <div class="pt-wrap">
                         <div class="pt-item">
-                            <img src="" alt="">
+                            <img class="pt-image" src="img/slide-1.png" alt="">
                         </div>
                         <div class="pt-item">
-                            <img src="" alt="">
+                            <img class="pt-image" src="img/slide-1.png" alt="">
                         </div>
                         <div class="pt-item">
-                            <img src="" alt="">
+                            <img class="pt-image" src="img/slide-1.png" alt="">
                         </div>
                         <div class="pt-item">
-                            <img src="" alt="">
+                            <img class="pt-image" src="img/slide-1.png" alt="">
                         </div>
                     </div>
                     <div class="pt-controls">
                         <button class="pt-left"></button>
                         <button class="pt-right"></button>
                     </div>
-                </div>
+                </div> -->
             </div>
         </section>
 
+        <!-- 
         <section class="area area--about">
-            <div class="area-content">
+            <div class="area-content pt-80 pb-80">
                 <div class="grid">
                     <div class="grid-1-6">
                         <img class="image" src="img/1.jpg" alt="">
@@ -104,45 +134,48 @@
             </div>
             <div class="ar-bg"></div>
         </section>
+        -->
     
-        <section class="area">
+        <section class="area" style="background-color: #fff; padding-top: 140px; padding-bottom: 140px;">
             <div class="area-content">
-                <div class="ar-head">
+                <div class="ar-head ar-head--center" style="margin-bottom: 60px;">
                     <span class="uptitle">Our Features</span>
-                    <h2>Ready to level up your development process?</h2>
+                    <h2 class="title" style="max-width: 500px;">Ready to level up your development process?</h2>
                 </div>
                 <div class="card-grid">
-                    <div class="cd-item">
-                        <img src="" alt="">
-                        <div class="cd-foot">
-                            <h3>Workspace</h3>
-                            <p>Whether you’re a beginner or seasoned pro, Family makes it easy.</p>
+                    <div class="card-item">
+                        <img class="card-image" src="img/feature-1.svg" alt="">
+                        <div class="card-foot">
+                            <h3 class="card-foot-title">Teamwork</h3>
+                            <p class="card-foot-text">Whether you’re a beginner or seasoned pro, Family makes it easy.</p>
                         </div>
                     </div>
                     <div class="card-item">
-                        <img src="" alt="">
-                        <div class="cd-foot">
-                            <h3>Organization projects</h3>
-                            <p>Whether you’re a beginner or seasoned pro, Family makes it easy.</p>
+                        <img class="card-image" src="img/feature-1.svg" alt="">
+                        <div class="card-foot">
+                            <h3 class="card-foot-title">Unique Block</h3>
+                            <p class="card-foot-text">Whether you’re a beginner or seasoned pro, Family makes it easy.</p>
                         </div>
                     </div>
                     <div class="card-item">
-                        <img src="" alt="">
-                        <div class="cd-foot">
-                            <h3>Sharing</h3>
-                            <p>Whether you’re a beginner or seasoned pro, Family makes it easy.</p>
+                        <img class="card-image" src="img/feature-1.svg" alt="">
+                        <div class="card-foot">
+                            <h3 class="card-foot-title">High Speed</h3>
+                            <p class="card-foot-text">Whether you’re a beginner or seasoned pro, Family makes it easy.</p>
                         </div>
                     </div>
                     <div class="card-item">
-                        <img src="" alt="">
-                        <div class="cd-foot">
-                            <h3>Coding</h3>
-                            <p>Whether you’re a beginner or seasoned pro, Family makes it easy.</p>
+                        <img class="card-image" src="img/feature-1.svg" alt="">
+                        <div class="card-foot">
+                            <h3 class="card-foot-title">Coding</h3>
+                            <p class="card-foot-text">Whether you’re a beginner or seasoned pro, Family makes it easy.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+
+        <hr style="margin-top: 800px;">
     </main>
 
     <footer class="foot">
@@ -161,6 +194,10 @@
             </div>
         </div>
     </footer>
+
+    <!-- Libs -->
+    <script src="jquery-3.7.1.min.js"></script>
+    <script src="owl-carousel/owl.carousel.min.js"></script>
 
     <script src="main.js"></script>
 </body>
